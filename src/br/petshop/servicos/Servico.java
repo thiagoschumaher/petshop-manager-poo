@@ -5,10 +5,12 @@ import br.petshop.animais.Animal;
 public abstract class Servico {
     protected String descricao;
     protected int duracaoMinutos;
+    protected  Animal animal;
 
-    public Servico(String descricao, int duracaoMinutos) {
+    public Servico(String descricao, int duracaoMinutos, Animal animal) {
         this.descricao = descricao;
         this.duracaoMinutos = duracaoMinutos;
+        this.animal = animal;
     }
 
     public String getDescricao() {
@@ -27,6 +29,13 @@ public abstract class Servico {
         this.duracaoMinutos = duracaoMinutos;
     }
 
+    public Animal getAnimal() {
+        return animal;
+    }
+
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
+    }
 
     public abstract double calcularCusto(Animal a);
 }

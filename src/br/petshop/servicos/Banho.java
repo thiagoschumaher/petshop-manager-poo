@@ -7,8 +7,8 @@ import javax.swing.JOptionPane;
 
 public class Banho extends Servico {
 
-    public Banho(String descricao, int duracaoMinutos) {
-        super(descricao, duracaoMinutos);
+    public Banho(String descricao, int duracaoMinutos, Animal animal) {
+        super(descricao, duracaoMinutos, animal);
     }
 
     @Override
