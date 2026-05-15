@@ -53,7 +53,6 @@ public class PetShop implements Relatorio, Calculavel {
 
         resumo.append("\nSERVIÇOS PRESTADOS:\n");
         for (Servico s : servicos) {
-            // Usa polimorfismo para pegar a descrição do serviço e o nome do animal associado
             resumo.append("- ").append(s.getDescricao())
                     .append(" para o animal: ").append(s.getAnimal().getNome())
                     .append(" | Custo: R$ ").append(String.format("%.2f", s.calcularCusto(s.getAnimal())))
