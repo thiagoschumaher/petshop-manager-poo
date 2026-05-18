@@ -10,7 +10,7 @@ public class Util {
 
         aux = """
                 [1] Cadastrar Animal
-                [2] Cadasstrar Serviço
+                [2] Cadastrar Serviço
                 [3] Calcular Conta Total
                 [4] Imprimir Relatório
                 [5] Finalizar
